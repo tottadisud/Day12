@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sample Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="css/style.css" />
+</head>
+<body>
+
+    <div id="sss">
+        sample division-1
+    </div>
+    <div class="sample">
+            sample division2
+        </div>
+        <div class="sample">
+            sample division2
+        </div><br>
+
+        <input type"number" id="input1" placeholder="firstInput" onCopy="return false" onselect="false"/>
+        <input type"number" id="input2" placeholder="secondInput2"/><br>
+
+        <span id="span"><p onCopy="return false" onselect="false"> new result</p></span><br>
+
+        <button type="button" onclick="checkValue()">Add</button><br>
+
+    
+</body>
+</html>
+<script>
+
+    function checkValue(){
+        var firstInput=Number(document.getElementById("input1").value);
+        var secondInput=Number(document.getElementById("input2").value);
+
+        var result=document.getElementById("span");
+      var finalRsult= result.innerHTML;
+      console.log(finalRsult);
+      
+    }
+
+ 
+
+
+ 
+    var a=10;
+    var b=20;
+    
+    document.write("tha addition is:"+(a+b));
+    document.writeln("<p>new statement</p>");
+    document.writeln("<p>new statement-2</p>");
+
+   var divElemenet= document.getElementsByClassName("sample");
+  
+     console.log(divElemenet[1]);
+
+     var h2=document.getElementById("sss");
+     console.log(h2);
+</script>
